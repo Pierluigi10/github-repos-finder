@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 function SearchRepos() {
   const [reposInfo, setReposInfo] = useState([]);
   const [searchRepos, setSearchRepos] = useState("");
+
+  const navigate = useNavigate();
 
   const handleButton = async () => {
     try {
@@ -40,9 +42,16 @@ function SearchRepos() {
               width="50px"
               height="50px"
             />
-            <h2>{item.name}</h2>
+            <h2
+              onClick={() => {
+                navigate(`/userinfo`, {
+                  state: item,
+                });
+              }}
+            >
+              {item.name}
+            </h2>
             <p>{item.language}</p>
-            {/* <p>{item.languages_url}</p> */}
           </div>
         );
       })}
