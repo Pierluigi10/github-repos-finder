@@ -18,12 +18,17 @@ function App() {
   // }, []);
 
   const handleButton = async () => {
-    const response = await fetch(
-      `https://api.github.com/users/${searchRepos}/repos`
-    );
-    const data = await response.json();
-    setReposInfo([...data]);
-    console.log([...data]);
+    try {
+      const response = await fetch(
+        `https://api.github.com/users/${searchRepos}/repos`
+      );
+      const data = await response.json();
+      setReposInfo([...data]);
+      console.log([...data]);
+    } catch (err) {
+      alert("no repos found, try again");
+      setSearchRepos("");
+    }
   };
 
   return (
@@ -52,7 +57,7 @@ function App() {
             />
             <h2>{item.name}</h2>
             <p>{item.language}</p>
-            <p>{item.languages_url}</p>
+            {/* <p>{item.languages_url}</p> */}
           </div>
         );
       })}
