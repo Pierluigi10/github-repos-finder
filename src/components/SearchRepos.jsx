@@ -98,6 +98,7 @@ function SearchRepos() {
             <p>{item.language}</p> 
             <p>{item.name}</p>
             <p>{item.stargazers_count}</p>
+            <p>{item.watchers_count}</p>
           </div>
         );
       })}
