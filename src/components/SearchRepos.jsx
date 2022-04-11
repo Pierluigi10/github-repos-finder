@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import getRating from "../rating.js";
+import kConverter from "../convertToK.js";
 
 function SearchRepos() {
   const [reposInfo, setReposInfo] = useState([]);
@@ -98,8 +99,8 @@ function SearchRepos() {
             <p>{item.name}</p>
             <p>{item.stargazers_count}</p>
             {/* <p>{item.watchers_count}</p> */}
+            <p>{kConverter(item.watchers_count)}</p>
             <p>{getRating(item.stargazers_count)}</p>
-      
           </div>
         );
       })}
