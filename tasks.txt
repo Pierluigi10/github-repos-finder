@@ -1,7 +1,7 @@
 to do 
 
 - quality score, languages_url
-- dinamic name (useState, input/buttons)
+
 - components ReposSearch ownersInfo
 - react-router-dom v6 (useLocation?useNavigation)
 - style 
@@ -13,3 +13,4 @@ x understand github api
 x fetch api (async/await or axios)
 x start with a static name (useEffect)
 x show repositories ( name, avatar, language)
+x dinamic name (useState, input/button)
