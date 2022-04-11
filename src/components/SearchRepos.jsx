@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import getRating from "../rating.js";
+
 function SearchRepos() {
   const [reposInfo, setReposInfo] = useState([]);
   // const [searchRepos, setSearchRepos] = useState("");
@@ -95,34 +97,9 @@ function SearchRepos() {
             <p>{item.language}</p>
             <p>{item.name}</p>
             <p>{item.stargazers_count}</p>
-            <p>{item.watchers_count}</p>
-            {item.stargazers_count > 0 && item.watchers_count < 150 && (
-              <p> 0.5 STELLA</p>
-            )}
-            {item.stargazers_count >= 150 && item.watchers_count < 300 && (
-              <p> 1 STELLA</p>
-            )}
-            {item.stargazers_count >= 300 && item.watchers_count < 450 && (
-              <p> 1.5 STELLA</p>
-            )}
-            {item.stargazers_count >= 450 && item.watchers_count < 600 && (
-              <p> 2 STELLA</p>
-            )}
-            {item.stargazers_count >= 600 && item.watchers_count < 750 && (
-              <p> 2.5 STELLA</p>
-            )}
-            {item.stargazers_count >= 750 && item.watchers_count < 1000 && (
-              <p> 3.0 STELLA</p>
-            )}
-            {item.stargazers_count >= 1000 && item.watchers_count < 1500 && (
-              <p> 3.5 STELLA</p>
-            )}
-            {item.stargazers_count >= 2000 && item.watchers_count < 2500 && (
-              <p> 4 STELLA</p>
-            )}
-            {item.stargazers_count >= 2500 && item.watchers_count < 3000 && (
-              <p> 4 STELLA</p>
-            )}
+            {/* <p>{item.watchers_count}</p> */}
+            <p>{getRating(item.stargazers_count)}</p>
+      
           </div>
         );
       })}
