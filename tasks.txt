@@ -1,0 +1,11 @@
+to do 
+- understand github api 
+- fetch api (async/await or axios)
+- start with a static name (useEffect)
+- show repositories
+- repository name, avatar, quality score, languages
+- dinamic name (useState, input/buttons)
+- components ReposSearch ownersInfo
+- react-router-dom v6 (useLocation?useNavigation)
+- style 
+
