@@ -22,6 +22,7 @@ function SearchRepos() {
   };
   return (
     <div className="SearchRepos">
+      <h1>Github repos finder</h1>
       <input
         className="searchInput"
         placeholder="search the repos"
@@ -53,15 +54,7 @@ function SearchRepos() {
                 width="50px"
                 height="50px"
               />
-              <h2
-                onClick={() => {
-                  navigate(`/userinfo`, {
-                    state: item,
-                  });
-                }}
-              >
-                {item.name}
-              </h2>
+              <h2>{item.name}</h2>
               <p className="language">{item.language}</p>
               <p className="description">{item.description}</p>
               {/* <p>{item.name}</p> */}
