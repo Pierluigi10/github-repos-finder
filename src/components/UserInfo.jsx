@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../style/userInfo.css";
+import { BsPeople } from "react-icons/bs";
 
 function UserInfo() {
   const navigate = useNavigate();
@@ -52,18 +53,20 @@ function UserInfo() {
         <a href={infos.owner.html_url} target="_blank" rel="noreferrer">
           {infos.owner.login}
         </a>
-        <div className="follwInfo">
-        {followers > 0 && (
-          <p>
-            <b>{followers}</b> followers
-          </p>
-        )}
-        {following > 0 && (
-          <p>
-            <b>{following}</b> Following
-          </p>
-        )}</div>
-        <p>{userBio}</p>
+        <div className="followInfo">
+          {(followers > 0 || following > 0) && <BsPeople/>}
+          {followers > 0 && (
+            <p>
+              <b>{followers}</b> followers
+            </p>
+          )}
+          {following > 0 && (
+            <p>
+              <b>{following}</b> following
+            </p>
+          )}
+        </div>
+        <p className="bio">{userBio}</p>
 
         {/* <p>{console.log(infos.description)}</p>
         <p>{console.log(infos.owner.followers_url)}</p> */}

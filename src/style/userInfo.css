@@ -1,0 +1,72 @@
+.UserInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: rgba(245, 245, 245, 0.829);
+  font-size: 32px;
+}
+
+.info {
+  width: 20rem;
+  min-height: 30rem;
+  border-radius: 10%;
+  margin: 20px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info a {
+  text-decoration: none;
+  color: #6863a0;
+  font-size: 23px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.info a:visited {
+  color: #6863a0;
+}
+
+.info .avatar {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid #6863a0;
+}
+
+.followInfo {
+  display: flex;
+  align-items: center;
+}
+
+.followInfo p {
+  margin-left: 5px;
+}
+
+.bio {
+  margin: 20px;
+  color: rgb(61, 57, 57);
+}
+
+.btnToHome {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  border-radius: 0.4rem;
+  color: #3c3864;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.btnToHome:hover {
+  color: white;
+  background-color: #6863a0;
+}

@@ -2,6 +2,10 @@
   margin: 10px;
 }
 
+h1 {
+  color: rgba(245, 245, 245, 0.829);
+}
+
 .searchInput {
   font-size: 1.2rem;
   border-radius: 0.2rem;
@@ -13,6 +17,7 @@
   margin-left: 10px;
   border-radius: 0.4rem;
   color: #3c3864;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -55,6 +60,7 @@
 
 .card h2 {
   color: #6863a0;
+  font-size: clamp(1.7rem, 1.5vw, 5rem);
 }
 
 .card .statistics {
@@ -74,9 +80,7 @@
 
 .card .description {
   margin: 20px;
-  padding: 0px;
   color: rgb(61, 57, 57);
-  overflow: hidden;
 }
 
 .statistics p {

@@ -12,6 +12,7 @@ function getRating(code) {
           <MdStarOutline />
         </span>
       );
+
     case code > 150 && code <= 300:
       return (
         <span>
@@ -22,6 +23,7 @@ function getRating(code) {
           <MdStarOutline />
         </span>
       );
+
     case code > 300 && code <= 450:
       return (
         <span>
@@ -32,6 +34,7 @@ function getRating(code) {
           <MdStarOutline />
         </span>
       );
+
     case code > 450 && code <= 600:
       return (
         <span>
@@ -42,7 +45,8 @@ function getRating(code) {
           <MdStarOutline />
         </span>
       );
-    case code > 750 && code <= 1000:
+
+    case code > 600 && code <= 750:
       return (
         <span>
           <MdStar />
@@ -52,23 +56,36 @@ function getRating(code) {
           <MdStarOutline />
         </span>
       );
+
+    case code > 750 && code <= 1000:
+      return (
+        <span>
+          <MdStar />
+          <MdStar />
+          <MdStar />
+          <MdStarOutline />
+          <MdStarOutline />
+        </span>
+      );
+
     case code > 1000 && code <= 1500:
       return (
         <span>
           <MdStar />
           <MdStar />
           <MdStar />
-          <MdStarOutline />
+          <MdStarHalf />
           <MdStarOutline />
         </span>
       );
+
     case code > 1500 && code <= 2000:
       return (
         <span>
           <MdStar />
           <MdStar />
           <MdStar />
-          <MdStarHalf />
+          <MdStar />
           <MdStarOutline />
         </span>
       );
