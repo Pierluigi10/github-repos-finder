@@ -17,6 +17,8 @@ x quality score (rating function), languages_url, following people
 x style UserInfo and SearchRepos
 x create folder functions with function
 x clean code and fix bug
+x deployed to vercel
+x add images to readme
 
 
 
