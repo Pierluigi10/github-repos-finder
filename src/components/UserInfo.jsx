@@ -8,6 +8,7 @@ function UserInfo() {
   const location = useLocation();
 
   const infos = location.state;
+  
 
   const [userBio, setUserBio] = useState("");
   const [followers, setFollowers] = useState("");
@@ -38,7 +39,7 @@ function UserInfo() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(infos);
+  // console.log(infos);
   return (
     <div className="UserInfo">
       <h2>Githuber Details</h2>
