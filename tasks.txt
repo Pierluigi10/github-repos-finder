@@ -14,3 +14,4 @@ x react-router-dom v6 (useLocation?useNavigation)
 X components ReposSearch ownersInfo
 X quality score (rating function), languages_url, following people
 x style userInfo style
+x create folder functions with function

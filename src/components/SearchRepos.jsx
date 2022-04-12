@@ -1,8 +1,8 @@
 import "../style/searchRepos.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import getRating from "../rating.js";
-import kConverter from "../convertToK.js";
+import getRating from "../functions/rating.js";
+import kConverter from "../functions/convertToK.js";
 import { FaRegEye } from "react-icons/fa";
 
 function SearchRepos() {
