@@ -4,5 +4,11 @@ body {
   /* font-family: 'Karla', sans-serif; */
   font-family: "Poppins", sans-serif;
   /* padding: 20px; */
-  background: #fceeb5;
+  /* background: #fceeb5; */
+  /* background: #f2f2f2; */
+  background: #3c3864;
+}
+
+h1 {
+  color: rgba(245, 245, 245, 0.829);
 }

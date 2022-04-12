@@ -62,15 +62,17 @@ function SearchRepos() {
               >
                 {item.name}
               </h2>
-              <p>{item.description}</p>
-              <p>{item.language}</p>
-              <p>{item.name}</p>
-              <p>{item.stargazers_count}</p>
+              <p className="language">{item.language}</p>
+              <p className="description">{item.description}</p>
+              {/* <p>{item.name}</p> */}
+              {/* <p>{item.stargazers_count}</p> */}
               {/* <p>{item.watchers_count}</p> */}
-              <p>
-                <FaRegEye /> {kConverter(item.watchers_count)}
-              </p>
-              <p>{getRating(item.stargazers_count)}</p>
+              <div className="statistics">
+                <p className="views">
+                  <FaRegEye /> {kConverter(item.watchers_count)} views
+                </p>
+                <p className="rating">{getRating(item.stargazers_count)}</p>
+              </div>
             </div>
           );
         })}

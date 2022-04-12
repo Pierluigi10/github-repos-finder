@@ -1,47 +1,47 @@
-import { MdStarHalf, MdStarOutline } from "react-icons/md";
+import { MdStarHalf, MdStarOutline, MdStar } from "react-icons/md";
 function getRating(code) {
   // Matches for any case where the expression === `true`:
   switch (true) {
     case code <= 150:
       return <MdStarHalf />;
     case code > 150 && code <= 300:
-      return <MdStarOutline />;
+      return <MdStar />;
     case code > 300 && code <= 450:
       return (
         <span>
-          <MdStarOutline />
+          <MdStar />
           <MdStarHalf />
         </span>
       );
     case code > 450 && code <= 600:
       return (
         <span>
-          <MdStarOutline />
-          <MdStarOutline />
+          <MdStar />
+          <MdStar />
         </span>
       );
     case code > 750 && code <= 1000:
       return (
         <span>
-          <MdStarOutline />
-          <MdStarOutline />
+          <MdStar />
+          <MdStar />
           <MdStarHalf />
         </span>
       );
     case code > 1000 && code <= 1500:
       return (
         <span>
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
+          <MdStar />
+          <MdStar />
+          <MdStar />
         </span>
       );
     case code > 1500 && code <= 2000:
       return (
         <span>
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
+          <MdStar />
+          <MdStar />
+          <MdStar />
           <MdStarHalf />
         </span>
       );
@@ -49,10 +49,10 @@ function getRating(code) {
     case code > 2000 && code <= 3000:
       return (
         <span>
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
+          <MdStar />
+          <MdStar />
+          <MdStar />
+          <MdStar />
           <MdStarHalf />
         </span>
       );
@@ -60,11 +60,11 @@ function getRating(code) {
     case code > 3000:
       return (
         <span>
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
+          <MdStar />
+          <MdStar />
+          <MdStar />
+          <MdStar />
+          <MdStar />
         </span>
       );
 
