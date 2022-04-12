@@ -3,14 +3,33 @@ function getRating(code) {
   // Matches for any case where the expression === `true`:
   switch (true) {
     case code <= 150:
-      return <MdStarHalf />;
+      return (
+        <span>
+          <MdStarHalf />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
+        </span>
+      );
     case code > 150 && code <= 300:
-      return <MdStar />;
+      return (
+        <span>
+          <MdStar />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
+        </span>
+      );
     case code > 300 && code <= 450:
       return (
         <span>
           <MdStar />
           <MdStarHalf />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
         </span>
       );
     case code > 450 && code <= 600:
@@ -18,6 +37,9 @@ function getRating(code) {
         <span>
           <MdStar />
           <MdStar />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
         </span>
       );
     case code > 750 && code <= 1000:
@@ -26,6 +48,8 @@ function getRating(code) {
           <MdStar />
           <MdStar />
           <MdStarHalf />
+          <MdStarOutline />
+          <MdStarOutline />
         </span>
       );
     case code > 1000 && code <= 1500:
@@ -34,6 +58,8 @@ function getRating(code) {
           <MdStar />
           <MdStar />
           <MdStar />
+          <MdStarOutline />
+          <MdStarOutline />
         </span>
       );
     case code > 1500 && code <= 2000:
@@ -43,6 +69,7 @@ function getRating(code) {
           <MdStar />
           <MdStar />
           <MdStarHalf />
+          <MdStarOutline />
         </span>
       );
 
