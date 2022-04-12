@@ -1,8 +1,6 @@
 to do 
 
-- quality score, languages_url
 
-- components ReposSearch ownersInfo
 
 - style 
 
@@ -15,3 +13,5 @@ x start with a static name (useEffect)
 x show repositories ( name, avatar, language)
 x dinamic name (useState, input/button)
 x react-router-dom v6 (useLocation?useNavigation)
+X components ReposSearch ownersInfo
+X quality score (rating function), languages_url, following people
