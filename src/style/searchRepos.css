@@ -1,0 +1,37 @@
+.SearchRepos {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin: 10px;
+  border: 1px solid red;
+}
+
+.searchInput {
+  font-size: 1.2rem;
+}
+
+.btnSearch {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  border-radius: 0.4rem;
+}
+
+.avatar {
+  height: 160px;
+  width: 160px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.repos {
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+
+  border: 1px solid red;
+}
+
+.card {
+  border-radius: 50px;
+
+  /* flex: 0 0 200px; */
+}
