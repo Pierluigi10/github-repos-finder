@@ -1,7 +1,8 @@
-to do 
+
+to do
 
 
-- clean code and fix bug
+
 
 done
 
@@ -11,7 +12,14 @@ x start with a static name (useEffect)
 x show repositories ( name, avatar, language)
 x dinamic name (useState, input/button)
 x react-router-dom v6 (useLocation?useNavigation)
-X components ReposSearch ownersInfo
-X quality score (rating function), languages_url, following people
-x style userInfo style
+x components ReposSearch ownersInfo
+x quality score (rating function), languages_url, following people
+x style UserInfo and SearchRepos
 x create folder functions with function
+x clean code and fix bug
+
+
+
+Quality score (rating.js)
+
+It is not a mathematical rating system, I have created several cases and based on the Github stargazers_count, 0 to 5 stars are awarded

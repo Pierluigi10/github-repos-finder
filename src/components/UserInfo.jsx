@@ -8,6 +8,7 @@ function UserInfo() {
   const location = useLocation();
 
   const infos = location.state;
+
   const [userBio, setUserBio] = useState("");
   const [followers, setFollowers] = useState("");
   const [following, setFollowing] = useState("");
@@ -54,7 +55,7 @@ function UserInfo() {
           {infos.owner.login}
         </a>
         <div className="followInfo">
-          {(followers > 0 || following > 0) && <BsPeople/>}
+          {(followers > 0 || following > 0) && <BsPeople />}
           {followers > 0 && (
             <p>
               <b>{followers}</b> followers
@@ -67,11 +68,7 @@ function UserInfo() {
           )}
         </div>
         <p className="bio">{userBio}</p>
-
-        {/* <p>{console.log(infos.description)}</p>
-        <p>{console.log(infos.owner.followers_url)}</p> */}
       </div>
-
       <button className="btnToHome" onClick={() => navigate("/")}>
         Home
       </button>

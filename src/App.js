@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import SearchRepos from "./components/SearchRepos";
 import UserInfo from "./components/UserInfo";

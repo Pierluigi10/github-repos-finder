@@ -16,8 +16,7 @@ function SearchRepos() {
       `https://api.github.com/search/repositories?q=${repoName}&per_page=6`
     );
     const data = await response.json();
-    console.log(data.items);
-
+    //console.log(data.items); //show all items of data
     setReposInfo([...data.items]);
   };
   return (
@@ -57,9 +56,6 @@ function SearchRepos() {
               <h2>{item.name}</h2>
               <p className="language">{item.language}</p>
               <p className="description">{item.description}</p>
-              {/* <p>{item.name}</p> */}
-              {/* <p>{item.stargazers_count}</p> */}
-              {/* <p>{item.watchers_count}</p> */}
               <div className="statistics">
                 <p className="views">
                   <FaRegEye /> {kConverter(item.watchers_count)} views
